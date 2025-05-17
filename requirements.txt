@@ -1,0 +1,20 @@
+# Core dependencies
+torch>=1.13.0
+transformers>=4.36.0
+openai
+open-clip-torch
+timm
+opencv-python
+numpy
+Pillow
+ruptures
+langchain
+langchain-community
+langchain-ollama
+ffmpeg-python
+pytube
+evaluate
+bertscore
+nltk
+
+
