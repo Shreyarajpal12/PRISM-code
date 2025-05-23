@@ -38,6 +38,7 @@ Evaluation is based on:
 * **BERTScore**
 
 These are computed using Hugging Face's `evaluate` and `bertscore` libraries.
+The complete script and scores are available in the eval.py
 
 ---
 
