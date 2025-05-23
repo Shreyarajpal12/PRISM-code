@@ -6,13 +6,13 @@ PRISM is a semantic summarization pipeline that processes instructional videos (
 
 ## 📦 Datasets
 
-Download datasets via:
+Download dataset videos via:
 ```bash
 python ycdown.py
 ````
 
 * [YouCook2 Dataset (lmms-lab/YouCook2)](https://huggingface.co/datasets/lmms-lab/YouCook2)
-* [ActivityNet Captions (HuggingFaceM4/ActivitiyNet\_Captions)](https://huggingface.co/datasets/HuggingFaceM4/ActivitiyNet_Captions)
+* [ActivityNet Captions (HuggingFaceM4/ActivitiyNet\_Captions)](https://huggingface.co/datasets/Leyo/ActivityNet_Captions)
 
 ---
 
