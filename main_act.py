@@ -58,7 +58,6 @@ context_length = 256  # For BiomedCLIP, default is 256
 
 ##########################################################
 ### 3) Audio Extraction & Full-Video Whisper Transcription
-###    (Processed Separately & Merged at Final)
 ##########################################################
 
 def extract_audio_ffmpeg(video_path, output_audio="temp_audio.wav"):
@@ -108,13 +107,8 @@ def get_full_video_transcript(video_path, whisper_model_size="base"):
 
 ##########################################################
 ### 4) Frame Extraction & Basic Feature Extraction
-###    (Your Existing Pipeline Logic)
 ##########################################################
 
-# As an example, you used ResNet (from "microsoft/resnet-18"),
-# but below is the reference to that step.
-# If you want to switch to CLIP or BiomedCLIP features for the same logic,
-# you can adapt. We'll keep your original approach for the threshold/PELT selection.
 
 from transformers import AutoImageProcessor, AutoModelForImageClassification
 def extract_frames_per_second(video_path, output_folder, fps_extract=1):
@@ -329,7 +323,6 @@ def call_llama_model(prompt):
 
 ##########################################################
 ### 7) GPT Label Generation for LLaVA Outputs
-###    (Placeholder for "gpt-4o" or your custom GPT usage)
 ##########################################################
 
 def call_gpt_text(prompt):
@@ -609,8 +602,7 @@ def generate_combined_summaries(
     print(f"Summaries saved to {output_json}")
 
 ##########################################################
-### 10) Final Summaries (Recursive Summarization) +
-###     Merging Entire Audio Transcript at the End
+### 10) Final Summaries (Recursive Summarization) 
 ##########################################################
 
 def call_model_llama(prompt):
