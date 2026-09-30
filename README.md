@@ -46,6 +46,7 @@ The complete script and scores are available in the eval.py
 
 * `main_act.py` – Main pipeline for summarization
 * `ycdown.py` – Downloads and organizes YouCook2 and ActivityNet Captions datasets
+* `ablation_plot.py` – Generates the ablation figure (quality and cost metrics across settings) in `figures/`
 * `requirements.txt` – List of required dependencies
 
 ---
